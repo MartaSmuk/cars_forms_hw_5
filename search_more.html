@@ -97,18 +97,33 @@
                 <a href="search.html">Back to the home page</a>
             </p>
             <p>
-                <label for="country">Producing country: <br>
-                    Germany<input type="radio" checked="checked" name="prod. country" />
-                    England<input type="radio" checked="checked" name="prod. country" />
-                    Japan<input type="radio" checked="checked" name="prod. country" />
-                    USA<input type="radio" checked="checked" name="prod. country" />
-                    France<input type="radio" checked="checked" name="prod. country" />
-                    China<input type="radio" checked="checked" name="prod. country" />
-                    Korea<input type="radio" checked="checked" name="prod. country" />
-                    Italy<input type="radio" checked="checked" name="prod. country" />
-                    Austria<input type="radio" checked="checked" name="prod. country" />
-                    Australia<input type="radio" checked="checked" name="prod. country" />
-                </label>
+                <label for="countryOfMan">Country of Manufacture: </label>
+                <input id="countryOfMan" type="text" name="prod. country" list="prdCountry">
+                    <datalist id="prdCountry">
+                        <option value="Germany">Germany</option>
+                        <option value="Japan">Japan</option> 
+                        <option value="USA">USA</option>
+                        <option value="France">France</option> 
+                        <option value="China">China</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Canada">Canada</option> 
+                        <option value="Korea">Korea</option>
+                        <option value="Italy">Italy</option> 
+                        <option value="England">England</option> 
+                    </datalist>  
+            </p>
+            <p>
+                <label for="carCondition">Condition of the car</label>
+                <select multiple="multiple" id="carCondition" name="state">
+                    <option value="undamaged">undamaged</option>
+                    <option value="profetionally repaired">profetionally repaired</option>
+                    <option value="not repaired">not repaired</option>
+                    <option value="non-usable">non-usable</option>
+                    <option value="reparation needed">reparation needed</option>
+                </select>
+            </p>
+            <p>
+                
             </p>
         </form>
     </main>
