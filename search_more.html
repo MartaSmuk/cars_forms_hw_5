@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>search_more</title>
 </head>
 <body>
     <header>
         <h1>Your dream car</h1>
-        <a href="login.html">Sign in</a>
     </header>
     <main>
         <form method="POST" action="https://fom.in.ua/echo">
             <p>
-                <input type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
+                <label for="brand">Brand of the Car</label>
+                <input id="brand" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
                 <datalist id="carBrands">
                     <option value="Audi">Audi</option>
                     <option value="BMW">BMW</option>
@@ -84,9 +84,9 @@
             </p>
             <p>
                 <label>Price Range:
-                    <label for="priceFrom">from:</label>
+                    <label for="priceFrom">from</label>
                     <input id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
-                    <label for="priceTo">to:</label>
+                    <label for="priceTo">to</label>
                     <input id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
                 </label>
             </p>
@@ -94,10 +94,26 @@
                 <input type="submit" name="submit" value="Find my dream car">
             </p>
             <p>
-                <a href="search_more.html">Show more</a>
+                <a href="search.html">Back to the home page</a>
+            </p>
+            <p>
+                <label for="country">Producing country: <br>
+                    Germany<input type="radio" checked="checked" name="prod. country" />
+                    England<input type="radio" checked="checked" name="prod. country" />
+                    Japan<input type="radio" checked="checked" name="prod. country" />
+                    USA<input type="radio" checked="checked" name="prod. country" />
+                    France<input type="radio" checked="checked" name="prod. country" />
+                    China<input type="radio" checked="checked" name="prod. country" />
+                    Korea<input type="radio" checked="checked" name="prod. country" />
+                    Italy<input type="radio" checked="checked" name="prod. country" />
+                    Austria<input type="radio" checked="checked" name="prod. country" />
+                    Australia<input type="radio" checked="checked" name="prod. country" />
+                </label>
             </p>
         </form>
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
 </body>
 </html>
