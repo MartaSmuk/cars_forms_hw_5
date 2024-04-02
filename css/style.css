@@ -1,0 +1,207 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Telex&display=swap');*/
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url('../fonts/static/NotoSans_Condensed-Regular.ttf') format('ttf');
+}
+
+body {
+    font-family: "Noto Sans";
+}
+
+.wrapper {
+    position: relative;
+    background-image: url(../img/pink_lambo.jpeg);
+    background-attachment: fixed;
+    font-family: "Noto Sans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper-login {
+    position: relative;
+    background-image: url(../img/pink_lambo-lohgIn.jpg);
+    background-attachment: fixed;
+    font-family: "Noto Sans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper * {
+    position: relative;
+    z-index: 2;
+}
+
+/*just for styling, can be as child element of .wrapper*/
+.wrapper::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(131, 131, 131);
+}
+
+.title__heading {
+    font-weight: 600;
+    color: rgb(56, 35, 95);
+}
+
+.title__link {
+    position: absolute;
+    right: 5px;
+    top: 60px;
+    text-decoration: none;
+    font-size: 25px; 
+}
+
+main {
+    min-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-search {
+    width: 60%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(218 9 8 / 77%);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.car-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-type__year--heading,
+.car-details__body--header,
+.car-details__price--title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.car-type {
+    flex-basis: 35%;
+}
+
+.car-type__brand-input {
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.car-type__year {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-criteria__bodytype-year {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.car-details__body {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    font-size: 20px;
+}
+
+.search-submit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-type__year--period {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.car-type__year--input {
+    font-size: 15px;
+}
+
+.car-details__price {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.car-details__price--range {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.car-details__price--range>div {
+    width: 45%;
+    display: flex;
+    gap: 30px;
+}
+
+.car-details__price--input {
+    width: 70%
+}
+
+.search-submit__button {
+    flex-basis: 50%;
+}
+
+.search-submit__button--input {
+    width: 40%;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #8d8a9a;
+    border: 0px;
+}
+
+.search-submit__button--link {
+    text-decoration: none;
+}
+
+.search-submit__button--link {
+    font-size: 25px;
+    font-weight: bold;
+}
+
