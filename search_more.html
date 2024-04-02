@@ -15,144 +15,162 @@
         </header>
         <main>
             <form class="form-search" method="POST" action="https://fom.in.ua/echo">
-                <p>
-                    <label for="brand">Brand of the Car</label>
-                    <input id="brand" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
-                    <datalist id="carBrands">
-                        <option value="Audi">Audi</option>
-                        <option value="BMW">BMW</option>
-                        <option value="Chevrolet">Chevrolet</option>
-                        <option value="Ford">Ford</option>
-                        <option value="Honda">Honda</option>
-                        <option value="Hyundai">Hyundai</option>
-                        <option value="Kia">Kia</option>
-                        <option value="Lexus">Lexus</option>
-                        <option value="Mazda">Mazda</option>
-                        <option value="Mercedes-Benz">Mercedes-Benz</option>
-                        <option value="Mitsubishi">Mitsubishi</option>
-                        <option value="Nissan">Nissan</option>
-                        <option value="Opel">Opel</option>
-                        <option value="Peugeot">Peugeot</option>
-                        <option value="Renault">Renault</option>
-                        <option value="Skoda">Skoda</option>
-                        <option value="Toyota">Toyota</option>
-                        <option value="Volkswagen">Volkswagen</option>
-                        <option value="Volvo">Volvo</option>
-                        <option value="Lamborgini">Lamborgini</option>
-                    </datalist>
-                </p>
-                <p>
-                    <label>Year of Manufacture:
-                        <label for="from">From: </label>
-                        <input id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
-                        <label for="to">To: </label>
-                        <input id="to" type="date" name="Prod. date to" min="1970-01-01" max="2024-01-01">
-                    </label>
-                </p>
-                <p>
-                    <fieldset>
-                        <legend>Body type</legend>
-                        <p>
-                            <input type="checkbox" name="Convertible">
-                            Convertible
-                        </p>
-                        <p>
-                            <input type="checkbox" name="Coupe">
-                            Coupe
-                        </p>
-                        <p>
-                            <input type="checkbox" name="Estate">
-                            Estate
-                        </p>
-                        <p>
-                            <input type="checkbox" name="Hatchback">
-                            Hatchback
-                        </p>
-                        <p>
-                            <input type="checkbox" name="MPV">
-                            MPV
-                        </p>
-                        <p>
-                            <input type="checkbox" name="Pickup">
-                            Pickup
-                        </p>
-                        <p>
-                            <input type="checkbox" name="Saloon">
-                            Saloon
-                        </p>
-                        <p>
-                            <input type="checkbox" name="SUV">
-                            SUV
-                        </p>
-                    </fieldset>
-                </p>
-                <p>
-                    <label>Price Range:
-                        <label for="priceFrom">from</label>
-                        <input id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
-                        <label for="priceTo">to</label>
-                        <input id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
-                    </label>
-                </p>
-                
-                <p>
-                    <label for="countryOfMan">Country of Manufacture: </label>
-                    <input id="countryOfMan" type="text" name="prod. country" list="prdCountry">
-                        <datalist id="prdCountry">
-                            <option value="Germany">Germany</option>
-                            <option value="Japan">Japan</option> 
-                            <option value="USA">USA</option>
-                            <option value="France">France</option> 
-                            <option value="China">China</option>
-                            <option value="Austria">Austria</option>
-                            <option value="Canada">Canada</option> 
-                            <option value="Korea">Korea</option>
-                            <option value="Italy">Italy</option> 
-                            <option value="England">England</option> 
-                        </datalist>  
-                </p>
-                <p>
-                    <label for="carCondition">Condition of the car</label>
-                    <select multiple="multiple" id="carCondition" name="state">
-                        <option value="undamaged">undamaged</option>
-                        <option value="profetionally repaired">profetionally repaired</option>
-                        <option value="not repaired">not repaired</option>
-                        <option value="non-usable">non-usable</option>
-                        <option value="reparation needed">reparation needed</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="fuel">Fuel type</label>
-                    <select name="Fuel type" id="fuel">
-                        <option value="diesel">diesel</option>
-                        <option value="electricity">electricity</option>
-                        <option value="petrol">petrol</option>
-                        <option value="hybrid">hybrid</option>
-                        <option value="gasoline">gasoline</option>
-                        <option value="biofuels">biofuels</option>
-                    </select>
-                </p>
-                <p>
-                    <label>
-                        Color of the car
-                        <input type="color" name="bg" /></label>
-                </p>
-                <p>
-                    <label for="conditioner">Air conditioner</label>
-                    <input type="text" id="conditioner" name="conditioner" list="conditioner-list">
-                    <datalist id="conditioner-list">
-                        <option value="Air conditioner">Air conditioner</option>
-                        <option value="1-Zone air conditioner">1-Zone air conditioner</option> 
-                        <option value="2-Zones Air conditioner">2-Zones Air conditioner</option>
-                        <option value="Multiple zoned air conditioner">Multiple zoned air conditioner</option> 
-                    </datalist>
-                </p>
-                <p>
-                    <input type="submit" name="submit" value="Find my dream car">
-                </p>
-                <p>
-                    <a href="search.html">Back to the home page</a>
-                </p>
+                <div class="car-type">
+                    <p class="car-type__brand">
+                        <label class="car-type__brand--label" for="car-brand">Car Brand: </label>
+                        <input class="car-type__brand-input--more" id="car-brand" type="text" name="Brand of the car" list="carBrands">
+                        <datalist id="carBrands">
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Kia">Kia</option>
+                            <option value="Lexus">Lexus</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Opel">Opel</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Skoda">Skoda</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Volvo">Volvo</option>
+                            <option value="Lamborgini">Lamborgini</option>
+                        </datalist>
+                    </p>
+                    <div class="car-type__year">
+                        <p class="car-type__year--heading">Year of Manufacture:</p>
+                        <div class="car-type__year--period">
+                            <label for="from">From: </label>
+                            <input class="car-type__year--input" id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
+                            <label for="to">To: </label>
+                            <input class="car-type__year--input" id="to" type="date" name="Prod. date to" min="1970-01-01" max="2024-01-01">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-details">
+                        <p class="car-details__body--header">Body type</p>
+                        <fieldset class="car-details__body">
+                            <p>
+                                <input type="checkbox" name="Convertible">
+                                Convertible
+                            </p>
+                            <p>
+                                <input type="checkbox" name="Coupe">
+                                Coupe
+                            </p>
+                            <p>
+                                <input type="checkbox" name="Estate">
+                                Estate
+                            </p>
+                            <p>
+                                <input type="checkbox" name="Hatchback">
+                                Hatchback
+                            </p>
+                            <p>
+                                <input type="checkbox" name="MPV">
+                                MPV
+                            </p>
+                            <p>
+                                <input type="checkbox" name="Pickup">
+                                Pickup
+                            </p>
+                            <p>
+                                <input type="checkbox" name="Saloon">
+                                Saloon
+                            </p>
+                            <p>
+                                <input type="checkbox" name="SUV">
+                                SUV
+                            </p>
+                        </fieldset>
+                    <div class="car-details__price">
+                        <div class="car-details__price--title">
+                            Price Range:
+                        </div>
+                        <div class="car-details__price--range">
+                            <div>
+                                <label for="priceFrom">From:</label>
+                                <input class="car-details__price--input" id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
+                            </div>
+                            <div>
+                                <label for="priceTo">To:</label>
+                                <input class="car-details__price--input" id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wraper-condition">
+                    <div class="country-fuel">
+                        <div class="country-fuel__country">
+                            <label class="country-fuel__country--label" for="countryOfMan">Country of<br>Manufacture: </label>
+                            <input class="country-fuel__country--input" id="countryOfMan" type="text" name="prod. country" list="prdCountry">
+                                <datalist id="prdCountry">
+                                    <option value="Germany">Germany</option>
+                                    <option value="Japan">Japan</option> 
+                                    <option value="USA">USA</option>
+                                    <option value="France">France</option> 
+                                    <option value="China">China</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Canada">Canada</option> 
+                                    <option value="Korea">Korea</option>
+                                    <option value="Italy">Italy</option> 
+                                    <option value="England">England</option> 
+                                </datalist>  
+                        </div>
+                        <div class="country-fuel__fuel">
+                            <label class="country-fuel__fuel--input" for="fuel">Fuel type:</label>
+                            <select class="country-fuel__fuel--select" name="Fuel type" id="fuel">
+                                <option value="diesel">diesel</option>
+                                <option value="electricity">electricity</option>
+                                <option value="petrol">petrol</option>
+                                <option value="hybrid">hybrid</option>
+                                <option value="gasoline">gasoline</option>
+                                <option value="biofuels">biofuels</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="car-condition">
+                        <label class="car-condition--label" for="carCondition">Condition of the car: </label>
+                        <select class="car-condition--select" multiple="multiple" id="carCondition" name="state">
+                            <option value="undamaged">undamaged</option>
+                            <option value="profetionally repaired">profetionally repaired</option>
+                            <option value="not repaired">not repaired</option>
+                            <option value="non-usable">non-usable</option>
+                            <option value="reparation needed">reparation needed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="color-conditioner">
+                    <div class="color-conditioner__color">
+                        <label class="color-conditioner__color--label" for="car-color">
+                            Color of the car:
+                        </label>
+                        <input class="color-conditioner__color--input" id="car-color" type="color" name="bg" />
+                    </div>
+                    <div class="color-conditioner__conditioner">
+                        <label class="color-conditioner__conditioner--label" for="conditioner">Air conditioner:</label>
+                        <input class="color-conditioner__conditioner--input" type="text" id="conditioner" name="conditioner" list="conditioner-list">
+                        <datalist id="conditioner-list">
+                            <option value="Air conditioner">Air conditioner</option>
+                            <option value="1-Zone air conditioner">1-Zone air conditioner</option> 
+                            <option value="2-Zones Air conditioner">2-Zones Air conditioner</option>
+                            <option value="Multiple zoned air conditioner">Multiple zoned air conditioner</option> 
+                        </datalist>
+                    </div>
+                </div>
+                <div class="search-submit">
+                    <div class="search-submit__button">
+                        <input class="search-submit__button--input" type="submit" name="submit" value="Find my dream car">
+                    </div>
+                    <div class="search-submit__more">
+                        <a class="search-submit__button--link" href="search.html">Back to the home page</a>
+                    </div>
+                </div>
             </form>
         </main>
         <footer></footer>

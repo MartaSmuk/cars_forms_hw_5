@@ -1,5 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Telex&display=swap');*/
-
 @font-face {
     font-family: "Noto Sans";
     src: url('../fonts/static/NotoSans_Condensed-Regular.ttf') format('ttf');
@@ -94,7 +92,9 @@ main {
     gap: 35px;
 }
 
-.car-type {
+.car-type,
+.wraper-condition,
+.color-conditioner {
     display: flex;
     justify-content: space-between;
 }
@@ -204,4 +204,64 @@ main {
     font-size: 25px;
     font-weight: bold;
 }
+
+.car-type__brand-input--more {
+    width: 50%;
+}
+
+.car-type__brand,
+.color-conditioner__color,
+.color-conditioner__conditioner {
+    flex-basis: 50%;
+}
+
+.car-type__brand-input--more,
+.country-fuel__country--input,
+.country-fuel__fuel--select,
+.color-conditioner__conditioner--input {
+    width: 60%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+}
+
+.color-conditioner__color--input{
+    width: 40%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.car-type__brand--label,
+.country-fuel__country--label,
+.country-fuel__fuel--input,
+.car-condition--label,
+.color-conditioner__color--label,
+.color-conditioner__conditioner--label {
+    font-size: 20px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.country-fuel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.car-condition{
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-condition--select {
+    width: 30%;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
 
