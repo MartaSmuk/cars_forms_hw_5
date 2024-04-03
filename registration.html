@@ -8,28 +8,31 @@
     <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="title">
+    <div class="wrapper-registration">
+        <header class="title-login">
             <h1 class="title__heading">Your dream car</h1>
-            <a href="search.html">Back to Site</a>
+            <a class="title__link" href="search.html">Back to Site</a>
         </header>
         <main>
-            <form method="POST" action="https://fom.in.ua/echo">
-                <p>
-                    <input type="email" name="email" placeholder="Email" required/>
-                </p>
-                <p>
-                    <input type="password" name="password" placeholder="Password" required/>
-                </p>
-                <p>
-                    <input type="password" name="repeat password" placeholder="Password" required/>
-                </p>
-                <p>
-                    Already have an account? <a href="login.html">Sign in</a>
-                </p>
-                <p>
-                    <input type="submit" name="submit" value="Sign up" />
-                </p>
+            <form class="login" method="POST" action="https://fom.in.ua/echo">
+                <h2 class="login--title">Sign up</h2>
+                <div class="login__data">
+                    <div>
+                        <input class="login__data--input" type="email" name="email" placeholder="Email" required/>
+                    </div>
+                    <div>
+                        <input class="login__data--input" type="password" name="password" placeholder="Password" required/>
+                    </div>
+                    <div>
+                        <input class="login__data--input" type="password" name="repeat password" placeholder="Password" required/>
+                    </div>
+                </div>
+                <div class="login__registration">
+                    Already have an account? <a class="login__registration--a" href="login.html">Sign in</a>
+                </div>
+                <div class="login__submit">
+                    <input class="login__submit--input" type="submit" name="submit" value="Sign up" />
+                </div>
             </form>
         </main>
         <footer></footer>
