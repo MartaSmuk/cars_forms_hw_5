@@ -9,29 +9,31 @@
 </head>
     <body>
         <div class="wrapper-login">
-            <header class="title">
+            <header class="title-login">
                 <h1 class="title__heading">Your dream car</h1>
                 <a class="title__link" href="search.html">Back to Site</a>
             </header>
             <main>
-                <form method="POST" action="https://fom.in.ua/echo">
-                    <h2>Sign in</h2>
-                    <p>
-                        <input type="email" name="Email" placeholder="Email" required>
-                    </p>
-                    <p>
-                        <input type="password" name="password" placeholder="Password" required>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="checkbox: remember pw">
+                <form class="login" method="POST" action="https://fom.in.ua/echo">
+                    <h2 class="login--title">Sign in</h2>
+                    <div class="login__data">
+                        <div>
+                            <input class="login__data--input" type="email" name="Email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <input class="login__data--input" type="password" name="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="login__checkbox">
+                        <input class="login__checkbox--input" type="checkbox" name="checkbox: remember pw">
                         Remember my password
-                    </p>
-                    <p>
-                        Don't have an account? <a href="registration.html">Sign up</a>
-                    </p>
-                    <p>
-                        <input type="submit" name="submit" value="Sign in">
-                    </p>
+                    </div>
+                    <div class="login__registration">
+                        Don't have an account? <a class="login__registration--a" href="registration.html">Sign up</a>
+                    </div>
+                    <div class="login__submit">
+                        <input class="login__submit--input" type="submit" name="submit" value="Sign in">
+                    </div>
                     </form>
             </main>
         <footer></footer>
