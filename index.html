@@ -14,10 +14,10 @@
                 <a class="header__link" href="pages/login.html">Sign in</a>
             </header>
             <main>
-                <form class="search" method="POST" action="https://fom.in.ua/echo">
+                <form class="search-main" method="POST" action="https://fom.in.ua/echo">
                     <div class="cartype">
                         <p class="cartype__description">
-                            <input class="cartype__item" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
+                            <input class="cartype__item-main" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
                             <datalist id="carBrands">
                                 <option value="Audi">Audi</option>
                                 <option value="BMW">BMW</option>
@@ -41,9 +41,9 @@
                                 <option value="Lamborgini">Lamborgini</option>
                             </datalist>
                         </p>
-                        <div class="cartype__period">
-                            <p class="cartype__description">Year of Manufacture:</p>
-                            <div class="cartype__time">
+                        <div class="cartype__period-main">
+                            <p class="cartype__description-main">Year of Manufacture:</p>
+                            <div class="cartype__time-main">
                                 <label for="from">From: </label>
                                 <input class="cartype__from" id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
                                 <label for="to">To: </label>
@@ -51,9 +51,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cardetails">
-                            <p class="cardetails__description">Body type</p>
-                            <fieldset class="cardetails__items">
+                    <div class="cardetails-main">
+                            <p class="cardetails__description-main">Body type</p>
+                            <fieldset class="cardetails__items-main">
                                 <p>
                                     <input type="checkbox" name="Convertible">
                                     Convertible
@@ -87,8 +87,8 @@
                                     SUV
                                 </p>
                             </fieldset>
-                        <div class="cardetails__price">
-                            <div class="cardetails__description">
+                        <div class="cardetails__price-main">
+                            <div class="cardetails__description-main">
                                 Price Range:
                             </div>
                             <div class="cardetails__wrap">
@@ -103,9 +103,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="search-submit-wrap">
-                        <input class="search-submit_button" type="submit" name="submit" value="Find my dream car">
-                        <a class="search-submit_link" href="pages/search_more.html">Show more</a>
+                    <div class="search-submit-wrap-main">
+                        <input class="search-submit_button-main" type="submit" name="submit" value="Find my dream car">
+                        <a class="search-submit_link-main" href="pages/search_more.html">Show more</a>
                     </div>
                 </form>
             </main>
