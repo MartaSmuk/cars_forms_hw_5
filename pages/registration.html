@@ -8,34 +8,46 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="wrapper-registration">
         <header class="header-login">
             <h1 class="header__heading">Your dream car</h1>
-            <a class="header__link" href="../index.html">Back to Site</a>
         </header>
         <main>
-            <form class="login" method="POST" action="https://fom.in.ua/echo">
-                <h2 class="login__heading">Sign up</h2>
-                <div class="login__data">
-                    <div>
-                        <input class="login__email" type="email" name="email" placeholder="Email" required/>
-                    </div>
-                    <div>
-                        <input class="login__password" type="password" name="password" placeholder="Password" required/>
-                    </div>
-                    <div>
-                        <input class="login__password" type="password" name="repeat password" placeholder="Password" required/>
+            <div class="wrapper-registration">
+                <div class="search-nav">
+                    <form class="login" method="POST" action="https://fom.in.ua/echo">
+                        <h2 class="login__heading">Sign up</h2>
+                        <div class="login__data">
+                            <div>
+                                <input class="login__email" type="email" name="email" placeholder="Email" required/>
+                            </div>
+                            <div>
+                                <input class="login__password" type="password" name="password" placeholder="Password" required/>
+                            </div>
+                            <div>
+                                <input class="login__password" type="password" name="repeat password" placeholder="Password" required/>
+                            </div>
+                        </div>
+                        <div class="login__registration">
+                            Already have an account? <a class="login__registration-link" href="login.html">Sign in</a>
+                        </div>
+                        <div class="login__submit">
+                            <input class="login__submit-item" type="submit" name="submit" value="Sign up" />
+                        </div>
+                    </form>
+                    <div class="nav-login">
+                        <h2>Go to:</h4>
+                        <a class="nav__main link" href="../index.html">Main</a>
+                        <a class="nav__detailed link" href="search_more.html">Detailed</a>
+                        <a class="nav__login link" href="login.html">Login</a>
+                        <a class="nav__registration link" href="#">Registration</a>
                     </div>
                 </div>
-                <div class="login__registration">
-                    Already have an account? <a class="login__registration-link" href="login.html">Sign in</a>
-                </div>
-                <div class="login__submit">
-                    <input class="login__submit-item" type="submit" name="submit" value="Sign up" />
-                </div>
-            </form>
+            </div>
         </main>
-        <footer></footer>
+        <footer class="logo-reg">
+            <p class="logo__desc">Your luxury car</p>
+            <img class="logo__pic" src="../img/logo.jpeg" alt="logo">
+        </footer>
     </div>
 </body>
 </html>
