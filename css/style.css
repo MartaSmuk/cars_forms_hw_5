@@ -137,8 +137,8 @@ main {
 }
 
 .cartype,
-.condition-wraper,
-.colorconditioner {
+.carcondition,
+.carsetup {
     display: flex;
     justify-content: space-between;
 }
@@ -257,15 +257,17 @@ main {
 }
 
 .cartype__description,
-.colorconditioner__wrapper,
-.colorconditioner__conditioner {
+.carsetup__color,
+.carsetup__conditioner {
+    display: flex;
+    align-items: center;
     flex-basis: 50%;
+    gap: 10px;
 }
 
 .car-type__brand-input--more,
-.condition__country,
-.condition__fuel,
-.conditioner__items {
+.carcondition__country-items,
+.carcondition__fuel-items {
     width: 60%;
     font-size: 20px;
     border-radius: 10px;
@@ -273,7 +275,7 @@ main {
     padding: 10px;
 }
 
-.color__items{
+.carsetup__color-items {
     width: 40%;
     font-size: 20px;
     border-radius: 10px;
@@ -281,23 +283,23 @@ main {
 }
 
 .car-type__brand--label,
-.condition__heading,
-.condition__heading,
-.carcondition__heading,
-.color__heading,
-.conditioner__heading {
+.carcondition__country-desc,
+.carcondition__country-desc,
+.carcondition__state-desc,
+.carsetup__color-desc,
+.carsetup__conditioner-desc {
     font-size: 20px;
     padding-right: 15px;
     font-weight: bold;
 }
 
-.condition__country-fuel {
+.carcondition__country-fuel {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.carcondition-wrapper {
+.carcondition__state {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
@@ -306,7 +308,7 @@ main {
     gap: 20%;
 }
 
-.carcondition__items {
+.carcondition__state-items {
     width: 30%;
     border-radius: 10px;
     font-size: 15px;
@@ -340,16 +342,16 @@ main {
 }
 
 .checkbox-wrapper,
-.registration-wrapper {
+.login__registration-link {
     flex-basis: 60%;
     font-size: 20px;
 }
 
-.submit-wrapper {
+.login__submit-item {
     width: 90px;
 }
 
-.login__submit {
+.login__submit-item {
     width: 100px;
     font-size: 20px;
     padding: 10px;
@@ -358,12 +360,12 @@ main {
     background-color: gray;
 }
 
-.login__registration {
+.login__registration-link {
     color: green;
     text-decoration: none;
 }
 
-.registration-wrapper {
+.login__registration-link {
     color: red;
     text-decoration: none;
 }

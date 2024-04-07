@@ -15,99 +15,102 @@
         </header>
         <main>
             <form class="search" method="POST" action="https://fom.in.ua/echo">
+
                 <div class="cartype">
-                    <p class="cartype__heading">
-                        <input class="cartype__brand" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
-                        <datalist id="carBrands">
-                            <option value="Audi">Audi</option>
-                            <option value="BMW">BMW</option>
-                            <option value="Chevrolet">Chevrolet</option>
-                            <option value="Ford">Ford</option>
-                            <option value="Honda">Honda</option>
-                            <option value="Hyundai">Hyundai</option>
-                            <option value="Kia">Kia</option>
-                            <option value="Lexus">Lexus</option>
-                            <option value="Mazda">Mazda</option>
-                            <option value="Mercedes-Benz">Mercedes-Benz</option>
-                            <option value="Mitsubishi">Mitsubishi</option>
-                            <option value="Nissan">Nissan</option>
-                            <option value="Opel">Opel</option>
-                            <option value="Peugeot">Peugeot</option>
-                            <option value="Renault">Renault</option>
-                            <option value="Skoda">Skoda</option>
-                            <option value="Toyota">Toyota</option>
-                            <option value="Volkswagen">Volkswagen</option>
-                            <option value="Volvo">Volvo</option>
-                            <option value="Lamborgini">Lamborgini</option>
-                        </datalist>
-                    </p>
-                    <div class="cartype__period">
-                        <p class="cartype__title">Year of Manufacture:</p>
-                        <div class="cartype__year">
-                            <label for="from">From: </label>
-                            <input class="cartype__from" id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
-                            <label for="to">To: </label>
-                            <input class="cartype__to" id="to" type="date" name="Prod. date to" min="1970-01-01" max="2024-01-01">
-                        </div>
-                    </div>
-                </div>
-                <div class="cardetails">
-                        <p class="cardetails__heading">Body type</p>
-                        <fieldset class="cardetails__body">
-                            <p>
-                                <input type="checkbox" name="Convertible">
-                                Convertible
-                            </p>
-                            <p>
-                                <input type="checkbox" name="Coupe">
-                                Coupe
-                            </p>
-                            <p>
-                                <input type="checkbox" name="Estate">
-                                Estate
-                            </p>
-                            <p>
-                                <input type="checkbox" name="Hatchback">
-                                Hatchback
-                            </p>
-                            <p>
-                                <input type="checkbox" name="MPV">
-                                MPV
-                            </p>
-                            <p>
-                                <input type="checkbox" name="Pickup">
-                                Pickup
-                            </p>
-                            <p>
-                                <input type="checkbox" name="Saloon">
-                                Saloon
-                            </p>
-                            <p>
-                                <input type="checkbox" name="SUV">
-                                SUV
-                            </p>
-                        </fieldset>
-                    <div class="cardetails__price">
-                        <div class="cardetails__priceheading">
-                            Price Range:
-                        </div>
-                        <div class="cardetails__range">
-                            <div class="range__wrap">
-                                <label for="priceFrom">From:</label>
-                                <input class="cardetails__from" id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
-                            </div>
-                            <div class="range__wrap">
-                                <label for="priceTo">To:</label>
-                                <input class="cardetails__to" id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
+                        <p class="cartype__description">
+                            <input class="cartype__item" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
+                            <datalist id="carBrands">
+                                <option value="Audi">Audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="Kia">Kia</option>
+                                <option value="Lexus">Lexus</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                <option value="Mitsubishi">Mitsubishi</option>
+                                <option value="Nissan">Nissan</option>
+                                <option value="Opel">Opel</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Skoda">Skoda</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Lamborgini">Lamborgini</option>
+                            </datalist>
+                        </p>
+                        <div class="cartype__period">
+                            <p class="cartype__description">Year of Manufacture:</p>
+                            <div class="cartype__time">
+                                <label for="from">From: </label>
+                                <input class="cartype__from" id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
+                                <label for="to">To: </label>
+                                <input class="cartype__to" id="to" type="date" name="Prod. date to" min="1970-01-01" max="2024-01-01">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="condition-wraper">
-                    <div class="condition__country-fuel">
-                        <div class="country-wrapper">
-                            <label class="condition__heading" for="countryOfMan">Country of<br>Manufacture: </label>
-                            <input class="condition__country" id="countryOfMan" type="text" name="prod. country" list="prdCountry">
+                    <div class="cardetails">
+                            <p class="cardetails__description">Body type</p>
+                            <fieldset class="cardetails__items">
+                                <p>
+                                    <input type="checkbox" name="Convertible">
+                                    Convertible
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="Coupe">
+                                    Coupe
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="Estate">
+                                    Estate
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="Hatchback">
+                                    Hatchback
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="MPV">
+                                    MPV
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="Pickup">
+                                    Pickup
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="Saloon">
+                                    Saloon
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="SUV">
+                                    SUV
+                                </p>
+                            </fieldset>
+                        <div class="cardetails__price">
+                            <div class="cardetails__description">
+                                Price Range:
+                            </div>
+                            <div class="cardetails__wrap">
+                                <div class="cardetails__wrap-from">
+                                    <label for="priceFrom">From:</label>
+                                    <input class="cardetails__from" id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
+                                </div>
+                                <div class="cardetails__wrap-to">
+                                    <label for="priceTo">To:</label>
+                                    <input class="cardetails__to" id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div class="carcondition">
+                    <div class="carcondition__country-fuel">
+                        <div class="carcondition__country">
+                            <label class="carcondition__country-desc" for="countryOfMan">Country of<br>Manufacture: </label>
+                            <input class="carcondition__country-items" id="countryOfMan" type="text" name="prod. country" list="prdCountry">
                                 <datalist id="prdCountry">
                                     <option value="Germany">Germany</option>
                                     <option value="Japan">Japan</option> 
@@ -121,9 +124,9 @@
                                     <option value="England">England</option> 
                                 </datalist>  
                         </div>
-                        <div class="fuel__wrapper">
-                            <label class="condition__heading" for="fuel">Fuel type:</label>
-                            <select class="condition__fuel" name="Fuel type" id="fuel">
+                        <div class="carcondition__fuel">
+                            <label class="carcondition__fuel-desc" for="fuel">Fuel type:</label>
+                            <select class="carcondition__fuel-items" name="Fuel type" id="fuel">
                                 <option value="diesel">diesel</option>
                                 <option value="electricity">electricity</option>
                                 <option value="petrol">petrol</option>
@@ -133,9 +136,9 @@
                             </select>
                         </div>
                     </div>
-                    <div class="carcondition-wrapper">
-                        <label class="carcondition__heading" for="carCondition">Condition of the car: </label>
-                        <select class="carcondition__items" multiple="multiple" id="carCondition" name="state">
+                    <div class="carcondition__state">
+                        <label class="carcondition__state-desc" for="carCondition">Condition of the car: </label>
+                        <select class="carcondition__state-items" multiple="multiple" id="carCondition" name="state">
                             <option value="undamaged">undamaged</option>
                             <option value="profetionally repaired">profetionally repaired</option>
                             <option value="not repaired">not repaired</option>
@@ -144,31 +147,25 @@
                         </select>
                     </div>
                 </div>
-                <div class="colorconditioner">
-                    <div class="colorconditioner__wrapper">
-                        <label class="color__heading" for="car-color">
+
+
+                <div class="carsetup">
+                    <div class="carsetup__color">
+                        <label class="carsetup__color-desc" for="car-color">
                             Color of the car:
                         </label>
-                        <input class="color__items" id="car-color" type="color" name="bg" />
+                        <input class="carsetup__color-items" id="car-color" type="color" name="bg" />
                     </div>
-                    <div class="colorconditioner__conditioner">
-                        <label class="conditioner__heading" for="conditioner">Air conditioner:</label>
-                        <input class="conditioner__items" type="text" id="conditioner" name="conditioner" list="conditioner-list">
-                        <datalist id="conditioner-list">
-                            <option value="Air conditioner">Air conditioner</option>
-                            <option value="1-Zone air conditioner">1-Zone air conditioner</option> 
-                            <option value="2-Zones Air conditioner">2-Zones Air conditioner</option>
-                            <option value="Multiple zoned air conditioner">Multiple zoned air conditioner</option> 
-                        </datalist>
+                    <div class="carsetup__conditioner">
+                        <label class="carsetup__conditioner-desc" for="conditioner">Air conditioner:</label>
+                        1-Zone<input type="radio" checked="checked" name="group1" />
+                        2-Zones<input type="radio" name="group1" />
+                        Multiple zoned<input type="radio" name="group1" />
                     </div>
                 </div>
-                <div class="submit">
-                    <div class="submit__wrapper">
-                        <input class="submit__button" type="submit" name="submit" value="Find my dream car">
-                    </div>
-                    <div class="submit__more">
-                        <a class="submit__link" href="../index.html">Show less</a>
-                    </div>
+                <div class="search-submit-wrap">
+                    <input class="search-submit_button" type="submit" name="submit" value="Find my dream car">
+                    <a class="search-submit_link" href="../index.html">Show less</a>
                 </div>
             </form>
         </main>
