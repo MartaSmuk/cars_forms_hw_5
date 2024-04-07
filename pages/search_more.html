@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search_more</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div class="wrapper">
-        <header class="title">
-            <h1 class="title__heading">Your dream car</h1>
-            <a class="title__link" href="login.html">Sign in</a>
+        <header class="header">
+            <h1 class="header__heading">Your dream car</h1>
+            <a class="header__link" href="../login.html">Sign in</a>
         </header>
         <main>
-            <form class="form-search" method="POST" action="https://fom.in.ua/echo">
-                <div class="car-type">
-                    <p class="car-type__brand">
-                        <label class="car-type__brand--label" for="car-brand">Car Brand: </label>
-                        <input class="car-type__brand-input--more" id="car-brand" type="text" name="Brand of the car" list="carBrands">
+            <form class="search" method="POST" action="https://fom.in.ua/echo">
+                <div class="cartype">
+                    <p class="cartype__heading">
+                        <input class="cartype__brand" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
                         <datalist id="carBrands">
                             <option value="Audi">Audi</option>
                             <option value="BMW">BMW</option>
@@ -42,19 +41,19 @@
                             <option value="Lamborgini">Lamborgini</option>
                         </datalist>
                     </p>
-                    <div class="car-type__year">
-                        <p class="car-type__year--heading">Year of Manufacture:</p>
-                        <div class="car-type__year--period">
+                    <div class="cartype__period">
+                        <p class="cartype__title">Year of Manufacture:</p>
+                        <div class="cartype__year">
                             <label for="from">From: </label>
-                            <input class="car-type__year--input" id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
+                            <input class="cartype__from" id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
                             <label for="to">To: </label>
-                            <input class="car-type__year--input" id="to" type="date" name="Prod. date to" min="1970-01-01" max="2024-01-01">
+                            <input class="cartype__to" id="to" type="date" name="Prod. date to" min="1970-01-01" max="2024-01-01">
                         </div>
                     </div>
                 </div>
-                <div class="car-details">
-                        <p class="car-details__body--header">Body type</p>
-                        <fieldset class="car-details__body">
+                <div class="cardetails">
+                        <p class="cardetails__heading">Body type</p>
+                        <fieldset class="cardetails__body">
                             <p>
                                 <input type="checkbox" name="Convertible">
                                 Convertible
@@ -88,27 +87,27 @@
                                 SUV
                             </p>
                         </fieldset>
-                    <div class="car-details__price">
-                        <div class="car-details__price--title">
+                    <div class="cardetails__price">
+                        <div class="cardetails__priceheading">
                             Price Range:
                         </div>
-                        <div class="car-details__price--range">
-                            <div>
+                        <div class="cardetails__range">
+                            <div class="range__wrap">
                                 <label for="priceFrom">From:</label>
-                                <input class="car-details__price--input" id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
+                                <input class="cardetails__from" id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
                             </div>
-                            <div>
+                            <div class="range__wrap">
                                 <label for="priceTo">To:</label>
-                                <input class="car-details__price--input" id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
+                                <input class="cardetails__to" id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="wraper-condition">
-                    <div class="country-fuel">
-                        <div class="country-fuel__country">
-                            <label class="country-fuel__country--label" for="countryOfMan">Country of<br>Manufacture: </label>
-                            <input class="country-fuel__country--input" id="countryOfMan" type="text" name="prod. country" list="prdCountry">
+                <div class="condition-wraper">
+                    <div class="condition__country-fuel">
+                        <div class="country-wrapper">
+                            <label class="condition__heading" for="countryOfMan">Country of<br>Manufacture: </label>
+                            <input class="condition__country" id="countryOfMan" type="text" name="prod. country" list="prdCountry">
                                 <datalist id="prdCountry">
                                     <option value="Germany">Germany</option>
                                     <option value="Japan">Japan</option> 
@@ -122,9 +121,9 @@
                                     <option value="England">England</option> 
                                 </datalist>  
                         </div>
-                        <div class="country-fuel__fuel">
-                            <label class="country-fuel__fuel--input" for="fuel">Fuel type:</label>
-                            <select class="country-fuel__fuel--select" name="Fuel type" id="fuel">
+                        <div class="fuel__wrapper">
+                            <label class="condition__heading" for="fuel">Fuel type:</label>
+                            <select class="condition__fuel" name="Fuel type" id="fuel">
                                 <option value="diesel">diesel</option>
                                 <option value="electricity">electricity</option>
                                 <option value="petrol">petrol</option>
@@ -134,9 +133,9 @@
                             </select>
                         </div>
                     </div>
-                    <div class="car-condition">
-                        <label class="car-condition--label" for="carCondition">Condition of the car: </label>
-                        <select class="car-condition--select" multiple="multiple" id="carCondition" name="state">
+                    <div class="carcondition-wrapper">
+                        <label class="carcondition__heading" for="carCondition">Condition of the car: </label>
+                        <select class="carcondition__items" multiple="multiple" id="carCondition" name="state">
                             <option value="undamaged">undamaged</option>
                             <option value="profetionally repaired">profetionally repaired</option>
                             <option value="not repaired">not repaired</option>
@@ -145,16 +144,16 @@
                         </select>
                     </div>
                 </div>
-                <div class="color-conditioner">
-                    <div class="color-conditioner__color">
-                        <label class="color-conditioner__color--label" for="car-color">
+                <div class="colorconditioner">
+                    <div class="colorconditioner__wrapper">
+                        <label class="color__heading" for="car-color">
                             Color of the car:
                         </label>
-                        <input class="color-conditioner__color--input" id="car-color" type="color" name="bg" />
+                        <input class="color__items" id="car-color" type="color" name="bg" />
                     </div>
-                    <div class="color-conditioner__conditioner">
-                        <label class="color-conditioner__conditioner--label" for="conditioner">Air conditioner:</label>
-                        <input class="color-conditioner__conditioner--input" type="text" id="conditioner" name="conditioner" list="conditioner-list">
+                    <div class="colorconditioner__conditioner">
+                        <label class="conditioner__heading" for="conditioner">Air conditioner:</label>
+                        <input class="conditioner__items" type="text" id="conditioner" name="conditioner" list="conditioner-list">
                         <datalist id="conditioner-list">
                             <option value="Air conditioner">Air conditioner</option>
                             <option value="1-Zone air conditioner">1-Zone air conditioner</option> 
@@ -163,12 +162,12 @@
                         </datalist>
                     </div>
                 </div>
-                <div class="search-submit">
-                    <div class="search-submit__button">
-                        <input class="search-submit__button--input" type="submit" name="submit" value="Find my dream car">
+                <div class="submit">
+                    <div class="submit__wrapper">
+                        <input class="submit__button" type="submit" name="submit" value="Find my dream car">
                     </div>
-                    <div class="search-submit__more">
-                        <a class="search-submit__button--link" href="search.html">Back to the home page</a>
+                    <div class="submit__more">
+                        <a class="submit__link" href="../index.html">Show less</a>
                     </div>
                 </div>
             </form>

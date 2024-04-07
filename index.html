@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
-            <header class="title">
-                <h1 class="title__heading">Your dream car</h1>
-                <a class="title__link" href="login.html">Sign in</a>
+            <header class="header">
+                <h1 class="header__heading">Your dream car</h1>
+                <a class="header__link" href="pages/login.html">Sign in</a>
             </header>
             <main>
-                <form class="form-search" method="POST" action="https://fom.in.ua/echo">
-                    <div class="car-type">
-                        <p class="car-type__brand">
-                            <input class="car-type__brand-input" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
+                <form class="search" method="POST" action="https://fom.in.ua/echo">
+                    <div class="cartype">
+                        <p class="cartype__description">
+                            <input class="cartype__item" type="text" name="Brand of the car" list="carBrands" placeholder="Brand of the Car">
                             <datalist id="carBrands">
                                 <option value="Audi">Audi</option>
                                 <option value="BMW">BMW</option>
@@ -41,19 +41,19 @@
                                 <option value="Lamborgini">Lamborgini</option>
                             </datalist>
                         </p>
-                        <div class="car-type__year">
-                            <p class="car-type__year--heading">Year of Manufacture:</p>
-                            <div class="car-type__year--period">
+                        <div class="cartype__period">
+                            <p class="cartype__description">Year of Manufacture:</p>
+                            <div class="cartype__time">
                                 <label for="from">From: </label>
-                                <input class="car-type__year--input" id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
+                                <input class="cartype__from" id="from" type="date" name="Prod. date from" min="1970-01-01" max="2024-01-01">
                                 <label for="to">To: </label>
-                                <input class="car-type__year--input" id="to" type="date" name="Prod. date to" min="1970-01-01" max="2024-01-01">
+                                <input class="cartype__to" id="to" type="date" name="Prod. date to" min="1970-01-01" max="2024-01-01">
                             </div>
                         </div>
                     </div>
-                    <div class="car-details">
-                            <p class="car-details__body--header">Body type</p>
-                            <fieldset class="car-details__body">
+                    <div class="cardetails">
+                            <p class="cardetails__description">Body type</p>
+                            <fieldset class="cardetails__items">
                                 <p>
                                     <input type="checkbox" name="Convertible">
                                     Convertible
@@ -87,29 +87,25 @@
                                     SUV
                                 </p>
                             </fieldset>
-                        <div class="car-details__price">
-                            <div class="car-details__price--title">
+                        <div class="cardetails__price">
+                            <div class="cardetails__description">
                                 Price Range:
                             </div>
-                            <div class="car-details__price--range">
-                                <div>
+                            <div class="cardetails__wrap">
+                                <div class="cardetails__wrap-from">
                                     <label for="priceFrom">From:</label>
-                                    <input class="car-details__price--input" id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
+                                    <input class="cardetails__from" id="priceFrom" type="range" name="price range from" min="500" max="100000" step="200">
                                 </div>
-                                <div>
+                                <div class="cardetails__wrap-to">
                                     <label for="priceTo">To:</label>
-                                    <input class="car-details__price--input" id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
+                                    <input class="cardetails__to" id="priceTo" type="range" name="price range to" min="500" max="100000" step="200">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="search-submit">
-                        <div class="search-submit__button">
-                            <input class="search-submit__button--input" type="submit" name="submit" value="Find my dream car">
-                        </div>
-                        <div class="search-submit__more">
-                            <a class="search-submit__button--link" href="search_more.html">Show more</a>
-                        </div>
+                    <div class="search-submit-wrap">
+                        <input class="search-submit_button" type="submit" name="submit" value="Find my dream car">
+                        <a class="search-submit_link" href="pages/search_more.html">Show more</a>
                     </div>
                 </form>
             </main>

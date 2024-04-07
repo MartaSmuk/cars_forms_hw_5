@@ -85,7 +85,7 @@ body {
     z-index: 1;
 }
 
-.title {
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +94,7 @@ body {
     background-color: rgb(131, 131, 131);
 }
 
-.title-login {
+.header-login {
     position: absolute;
     z-index: 1;
     display: flex;
@@ -105,12 +105,12 @@ body {
     background-color: rgb(131, 131, 131);
 }
 
-.title__heading {
+.header__heading {
     font-weight: 600;
     color: rgb(56, 35, 95);
 }
 
-.title__link {
+.header__link {
     position: absolute;
     right: 5px;
     top: 60px;
@@ -126,7 +126,7 @@ main {
     padding: 20px;
 }
 
-.form-search {
+.search {
     width: 60%;
     padding: 30px;
     border-radius: 10px;
@@ -136,25 +136,24 @@ main {
     gap: 35px;
 }
 
-.car-type,
-.wraper-condition,
-.color-conditioner {
+.cartype,
+.condition-wraper,
+.colorconditioner {
     display: flex;
     justify-content: space-between;
 }
 
-.car-type__year--heading,
-.car-details__body--header,
-.car-details__price--title {
+.cartype__description,
+.cardetails__description {
     font-size: 20px;
     font-weight: bold;
 }
 
-.car-type {
+.cartype {
     flex-basis: 35%;
 }
 
-.car-type__brand-input {
+.cartype__item {
     width: 100%;
     height: fit-content;
     font-size: 25px;
@@ -163,7 +162,7 @@ main {
     border: 0px;
 }
 
-.car-type__year {
+.cartype__period {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
@@ -177,61 +176,65 @@ main {
     flex-direction: column;
 }
 
-.car-details {
+.cardetails {
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
 
-.car-details__body {
+.cardetails__items {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     font-size: 20px;
 }
 
-.search-submit {
+
+.search-submit-wrap {
     display: flex;
     justify-content: space-between;
 }
 
-.car-type__year--period {
+.cartype__time {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.car-type__year--input {
+.cartype__from,
+.cartype__to {
     font-size: 15px;
 }
 
-.car-details__price {
+.cardetails__price {
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
 
-.car-details__price--range {
+.cardetails__wrap {
     display: flex;
     justify-content: space-between;
 
 }
 
-.car-details__price--range>div {
+.cardetails__wrap-from,
+.cardetails__wrap-to {
     width: 45%;
     display: flex;
     gap: 30px;
 }
 
-.car-details__price--input {
+.cardetails__from,
+.cardetails__to {
     width: 70%
 }
 
-.search-submit__button {
+.submit__wrapper {
     flex-basis: 50%;
 }
 
-.search-submit__button--input {
+.search-submit_button {
     width: 40%;
     padding: 8px;
     border-radius: 20px;
@@ -240,11 +243,11 @@ main {
     border: 0px;
 }
 
-.search-submit__button--link {
+.search-submit_link {
     text-decoration: none;
 }
 
-.search-submit__button--link {
+.search-submit_link {
     font-size: 25px;
     font-weight: bold;
 }
@@ -253,16 +256,16 @@ main {
     width: 50%;
 }
 
-.car-type__brand,
-.color-conditioner__color,
-.color-conditioner__conditioner {
+.cartype__description,
+.colorconditioner__wrapper,
+.colorconditioner__conditioner {
     flex-basis: 50%;
 }
 
 .car-type__brand-input--more,
-.country-fuel__country--input,
-.country-fuel__fuel--select,
-.color-conditioner__conditioner--input {
+.condition__country,
+.condition__fuel,
+.conditioner__items {
     width: 60%;
     font-size: 20px;
     border-radius: 10px;
@@ -270,7 +273,7 @@ main {
     padding: 10px;
 }
 
-.color-conditioner__color--input{
+.color__items{
     width: 40%;
     font-size: 20px;
     border-radius: 10px;
@@ -278,34 +281,36 @@ main {
 }
 
 .car-type__brand--label,
-.country-fuel__country--label,
-.country-fuel__fuel--input,
-.car-condition--label,
-.color-conditioner__color--label,
-.color-conditioner__conditioner--label {
+.condition__heading,
+.condition__heading,
+.carcondition__heading,
+.color__heading,
+.conditioner__heading {
     font-size: 20px;
     padding-right: 15px;
     font-weight: bold;
 }
 
-.country-fuel {
+.condition__country-fuel {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.car-condition{
+.carcondition-wrapper {
     flex-basis: 60%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-items: center;
+    gap: 20%;
 }
 
-.car-condition--select {
+.carcondition__items {
     width: 30%;
     border-radius: 10px;
     font-size: 15px;
+    padding: 10px;
 }
 
 .login {
@@ -328,22 +333,23 @@ main {
     gap: 20px;
 }
 
-.login__data--input {
+.login__email,
+.login__password {
     font-size: 20px;
     padding: 10px;
 }
 
-.login__checkbox,
-.login__registration {
+.checkbox-wrapper,
+.registration-wrapper {
     flex-basis: 60%;
     font-size: 20px;
 }
 
-.login__submit--input {
+.submit-wrapper {
     width: 90px;
 }
 
-.login__submit--input {
+.login__submit {
     width: 100px;
     font-size: 20px;
     padding: 10px;
@@ -352,11 +358,16 @@ main {
     background-color: gray;
 }
 
-.login__registration--a {
+.login__registration {
+    color: green;
+    text-decoration: none;
+}
+
+.registration-wrapper {
     color: red;
     text-decoration: none;
 }
 
-.login--title {
+.login__heading {
     font-size: 30px;
 }

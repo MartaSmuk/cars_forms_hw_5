@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper-registration">
+        <header class="header-login">
+            <h1 class="header__heading">Your dream car</h1>
+            <a class="header__link" href="../index.html">Back to Site</a>
+        </header>
+        <main>
+            <form class="login" method="POST" action="https://fom.in.ua/echo">
+                <h2 class="login__heading">Sign up</h2>
+                <div class="login__data">
+                    <div>
+                        <input class="login__email" type="email" name="email" placeholder="Email" required/>
+                    </div>
+                    <div>
+                        <input class="login__password" type="password" name="password" placeholder="Password" required/>
+                    </div>
+                    <div>
+                        <input class="login__password" type="password" name="repeat password" placeholder="Password" required/>
+                    </div>
+                </div>
+                <div class="registration-wrapper">
+                    Already have an account? <a class="login__registration" href="login.html">Sign in</a>
+                </div>
+                <div class="submit-wrapper">
+                    <input class="login__submit" type="submit" name="submit" value="Sign up" />
+                </div>
+            </form>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

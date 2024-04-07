@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+    <body>
+        <div class="wrapper-login">
+            <header class="header-login">
+                <h1 class="header__heading">Your dream car</h1>
+                <a class="header__link" href="../index.html">Back to Site</a>
+            </header>
+            <main>
+                <form class="login" method="POST" action="https://fom.in.ua/echo">
+                    <h2 class="login__heading">Sign in</h2>
+                    <div class="login__data">
+                        <div>
+                            <input class="login__email" type="email" name="Email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <input class="login__password" type="password" name="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input class="login__checkbox" type="checkbox" name="checkbox: remember pw">
+                        Remember my password
+                    </div>
+                    <div class="registration-wrapper">
+                        Don't have an account? <a class="login__registration" href="registration.html">Sign up</a>
+                    </div>
+                    <div class="submit-wrapper">
+                        <input class="login__submit" type="submit" name="submit" value="Sign in">
+                    </div>
+                    </form>
+            </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
