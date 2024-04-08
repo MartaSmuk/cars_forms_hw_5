@@ -8,7 +8,6 @@ body {
 }
 
 .wrapper {
-    position: relative;
     background-image: url(../img/pink_lambo.jpeg);
     background-attachment: fixed;
     font-family: "Noto Sans";
@@ -23,7 +22,6 @@ body {
 }
 
 .wrapper-login {
-    position: relative;
     background-image: url(../img/pink_lambo-lohgIn.jpg);
     background-attachment: fixed;
     font-family: "Noto Sans";
@@ -38,7 +36,6 @@ body {
 }
 
 .wrapper-registration {
-    position: absolute;
     background-image: url(../img/pink-lambo-reg.jpg);
     background-attachment: fixed;
     font-family: "Noto Sans";
@@ -53,7 +50,6 @@ body {
 }
 
 .wrapper * {
-    position: relative;
     z-index: 2;
 }
 
@@ -95,7 +91,6 @@ body {
 }
 
 .header-login {
-    position: absolute;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -110,17 +105,9 @@ body {
     color: rgb(56, 35, 95);
 }
 
-.header__link {
-    position: absolute;
-    right: 5px;
-    top: 60px;
-    text-decoration: none;
-    font-size: 25px; 
-}
-
 .search {
     width: 60%;
-    padding: 30px;
+    padding: 2%;
     border-radius: 10px;
     background-color: rgb(218 9 8 / 77%);
     display: flex;
@@ -149,7 +136,7 @@ body {
 
 .cartype__description,
 .cardetails__description {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -165,8 +152,8 @@ body {
 .cartype__item {
     width: 100%;
     height: fit-content;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 1.6rem;
+    padding: 2%;
     border-radius: 10px;
     border: 0px;
 }
@@ -174,8 +161,8 @@ body {
 .cartype__item-main {
     width: 100%;
     height: fit-content;
-    font-size: 15px;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 1%;
     border-radius: 10px;
     border: 0px;
     margin-right: 10%;
@@ -219,16 +206,15 @@ body {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .cardetails__items-main {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 5px;
-    font-size: 15px;
+    font-size: 1rem;
 }
-
 
 .search-submit-wrap {
     display: flex;
@@ -255,7 +241,7 @@ body {
 
 .cartype__from,
 .cartype__to {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .cardetails__price {
@@ -294,9 +280,9 @@ body {
 
 .search-submit_button {
     width: 40%;
-    padding: 8px;
+    padding: 1%;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 1.3rem;
     background-color: #8d8a9a;
     border: 0px;
 }
@@ -305,19 +291,19 @@ body {
     width: 27%;
     padding: 0.5%;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 1rem;
     background-color: #8d8a9a;
     border: 0px;
 }
 
 .search-submit_link {
-    font-size: 25px;
+    font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
 }
 
 .search-submit_link-main {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -339,15 +325,15 @@ body {
 .carcondition__country-items,
 .carcondition__fuel-items {
     width: 60%;
-    font-size: 20px;
+    font-size: 1.3rem;
     border-radius: 10px;
     border: 0;
-    padding: 10px;
+    padding: 1%;
 }
 
 .carsetup__color-items {
     width: 40%;
-    font-size: 20px;
+    font-size: 1.3rem;
     border-radius: 10px;
     border: 0;
 }
@@ -358,8 +344,8 @@ body {
 .carcondition__state-desc,
 .carsetup__color-desc,
 .carsetup__conditioner-desc {
-    font-size: 20px;
-    padding-right: 15px;
+    font-size: 1.3rem;
+    padding-right: 1.5%;
     font-weight: bold;
 }
 
@@ -381,8 +367,8 @@ body {
 .carcondition__state-items {
     width: 30%;
     border-radius: 10px;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 1%;
 }
 
 .login {
@@ -392,8 +378,8 @@ body {
     gap: 20px;
     align-items: center;
     background-color: rgb(103, 73, 142);
-    padding: 20px;
-    margin-top: 6.5%;
+    padding: 2%;
+    margin-top: 1%;
     margin-left: 38%;
     width: 25%;
     border-radius: 10px;
@@ -407,14 +393,14 @@ body {
 
 .login__email,
 .login__password {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.3rem;
+    padding: 1%;
 }
 
 .checkbox-wrapper,
 .login__registration-link {
     flex-basis: 60%;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .login__submit-item {
@@ -423,8 +409,8 @@ body {
 
 .login__submit-item {
     width: 100px;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.3rem;
+    padding: 1.5%;
     border-radius: 30px;
     border: 0;
     background-color: gray;
@@ -441,7 +427,7 @@ body {
 }
 
 .login__heading {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .nav {
@@ -461,7 +447,7 @@ body {
     text-decoration: none;
     color: red;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .search-nav {
@@ -534,13 +520,11 @@ body {
     border-radius: 10%;
     border-radius: 10px;
     margin: 1%;
-    margin-top: 6.5%;
     z-index: 2;
     height: fit-content;
 }
 
 .logo-reg {
-    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -551,5 +535,20 @@ body {
     width: 100%;
     padding: 0.2%;
     z-index: 2;
-    margin-top: 48%;
+    margin-top: 21%;
 }
+
+.logo-more {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(131, 131, 131);
+    width: 100%;
+    padding: 0.2%;
+    z-index: 2;
+    margin-top: 5%;
+}
+
